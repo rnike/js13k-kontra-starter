@@ -12,6 +12,7 @@
   "devDependencies": {
     "archiver": "^5.3.1",
     "clean-webpack-plugin": "^4.0.0",
+    "esbuild-loader": "^2.19.0",
     "html-webpack-plugin": "^5.5.0",
     "kontra": "^8.0.0",
     "raw-loader": "^4.0.2",
