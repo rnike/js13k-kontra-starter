@@ -1,17 +1,17 @@
-## Purpose
+# A startup template for [js13kGames](https://js13kgames.com/) with the game engine [kontra](https://straker.github.io/kontra) included.
 
-The purpose of this project is to help make building [JS13k](https://js13kgames.com/) projects easier for folks who are familiar with the JavaScript ecosystem but don't want to go through the hassle of setting up a JS13k-specific build environment. The bulk of this project is a [Webpack](https://webpack.js.org/) config that does the following: 
-
-- Transpiles TypeScript (if any)
-- Minifies the resulting JavaScript
-- Inlines the JavaScript into an `index.html` file (in production)
-- Zips the `index.html` file
-- Checks that the zip file is under 13k
-- Runs `webpack-bundle-analyzer`
+> This is a fork from [mtmckenna/js13k-webpack-typescript-starter-party](https://github.com/mtmckenna/js13k-webpack-typescript-starter-party), thanks @mtmckenna for all the works.
 
 ## Requirements
 
 The commands assume [Yarn](https://yarnpkg.com/en/docs/install) is installed.
+
+## Quick start
+
+1. `git clone` and `cd` to this repo
+2. `yarn install`
+3. `yarn start` and start your development
+4. when complete, run `yarn party`
 
 ## Commands
 
