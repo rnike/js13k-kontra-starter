@@ -23,7 +23,7 @@ class InlineChunkHtmlPlugin {
     const scriptName = publicPath
       ? tag.attributes.src.replace(publicPath, '')
       : tag.attributes.src;
-    if (!this.tests.some(test => scriptName.match(test))) {
+    if (!this.tests.some((test) => scriptName.match(test))) {
       return tag;
     }
     const asset = assets[scriptName];
@@ -39,12 +39,12 @@ class InlineChunkHtmlPlugin {
       publicPath += '/';
     }
 
-    compiler.hooks.compilation.tap('InlineChunkHtmlPlugin', compilation => {
-      const tagFunction = tag =>
+    compiler.hooks.compilation.tap('InlineChunkHtmlPlugin', (compilation) => {
+      const tagFunction = (tag) =>
         this.getInlinedTag(publicPath, compilation.assets, tag);
 
       const hooks = this.htmlWebpackPlugin.getHooks(compilation);
-      hooks.alterAssetTagGroups.tap('InlineChunkHtmlPlugin', assets => {
+      hooks.alterAssetTagGroups.tap('InlineChunkHtmlPlugin', (assets) => {
         assets.headTags = assets.headTags.map(tagFunction);
         assets.bodyTags = assets.bodyTags.map(tagFunction);
       });

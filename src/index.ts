@@ -1,6 +1,6 @@
-import { init, Sprite, GameLoop, initKeys, keyPressed, clamp } from "kontra";
+import { init, Sprite, GameLoop, initKeys, keyPressed, clamp } from 'kontra';
 
-import croissantImage from "../assets/croissant.png";
+import croissantImage from '../assets/croissant.png';
 
 const MOVING_SPEED = 2;
 
@@ -21,15 +21,15 @@ image.onload = function () {
 
   const loop = GameLoop({
     update: function () {
-      if (keyPressed("arrowleft")) {
+      if (keyPressed('arrowleft')) {
         sprite.x -= MOVING_SPEED;
-      } else if (keyPressed("arrowright")) {
+      } else if (keyPressed('arrowright')) {
         sprite.x += MOVING_SPEED;
       }
 
-      if (keyPressed("arrowup")) {
+      if (keyPressed('arrowup')) {
         sprite.y -= MOVING_SPEED;
-      } else if (keyPressed("arrowdown")) {
+      } else if (keyPressed('arrowdown')) {
         sprite.y += MOVING_SPEED;
       }
 
