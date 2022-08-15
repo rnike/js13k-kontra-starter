@@ -1,7 +1,7 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const InlineChunkHtmlPlugin = require("./inline-chunk-html-plugin");
+const InlineChunkHtmlPlugin = require("./scripts/inline-chunk-html-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require("path");
 
