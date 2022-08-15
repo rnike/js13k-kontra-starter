@@ -7,14 +7,17 @@
     "build": "webpack --config webpack.prod.js",
     "check-file-size": "yarn node ./scripts/check-file-size.js",
     "build-zipped": "yarn run build && yarn node ./scripts/zip-file.js",
-    "party": "yarn run build-zipped && yarn run check-file-size"
+    "party": "yarn run build-zipped && yarn run check-file-size",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "archiver": "^5.3.1",
     "clean-webpack-plugin": "^4.0.0",
     "esbuild-loader": "^2.19.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.0",
     "kontra": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "raw-loader": "^4.0.2",
     "ts-loader": "^9.3.1",
