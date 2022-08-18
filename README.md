@@ -8,10 +8,10 @@ The commands assume [Yarn](https://yarnpkg.com/en/docs/install) is installed.
 
 ## Quick start
 
-1. `git clone` and `cd` to this repo
-2. `yarn install`
-3. `yarn start` and start your development
-4. when complete, run `yarn party`
+1. Click the ["Use this template"](https://github.com/rnike/js13k-kontra-starter/generate) button, or clone this repo.
+2. `yarn install && yarn start`
+4. Do what ever you want in `src`, and see the result on http://localhost:8080/
+5. When complete editing, run `yarn party` to prepare the package
 
 ## Commands
 
@@ -33,7 +33,7 @@ Builds, minifies, inlines, and zips the game to `./zipped/game.zip`. This comman
 
 ## Notes
 
-- Put your TS or JS in `src/index.ts`
-- Put your css in `src/index.html`
-- Put your images or other assets in `assets/`
+- Put your code in `src/index.ts`
+- Put your css in `src/index.css`
+- Put your images or other assets in `src/assets/`
 - This starter pulls in [this plugin](https://github.com/facebook/create-react-app/blob/edc671eeea6b7d26ac3f1eb2050e50f75cf9ad5d/packages/react-dev-utils/InlineChunkHtmlPlugin.js#L10) from Facebook's [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) to inline the JS into the HTML file.
