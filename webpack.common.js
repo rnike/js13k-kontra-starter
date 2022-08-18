@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   optimization: {
@@ -9,6 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: 'src/index.html', inject: 'body' }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin(),
   ],
   resolve: { extensions: ['.ts', '.js'] },
   module: {
@@ -36,6 +38,10 @@ module.exports = {
       {
         test: /\.glsl$/i,
         use: 'raw-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
