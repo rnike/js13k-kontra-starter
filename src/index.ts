@@ -1,3 +1,5 @@
+import './index.css';
+
 import { init, Sprite, GameLoop, initKeys, keyPressed, clamp } from 'kontra';
 
 import croissantImage from './assets/croissant.png';
