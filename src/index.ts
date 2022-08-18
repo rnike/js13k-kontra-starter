@@ -1,6 +1,6 @@
 import { init, Sprite, GameLoop, initKeys, keyPressed, clamp } from 'kontra';
 
-import croissantImage from '../assets/croissant.png';
+import croissantImage from './assets/croissant.png';
 
 const MOVING_SPEED = 2;
 
